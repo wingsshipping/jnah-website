@@ -11,6 +11,8 @@
       margin: 0;
       padding: 0;
       color: #1f2937;
+      direction: rtl;
+      text-align: right;
     }
     header {
       background-color: #2563eb;
@@ -18,47 +20,86 @@
       padding: 20px;
       text-align: center;
       font-size: 28px;
+      font-weight: bold;
     }
     nav {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 25px;
       background-color: #1e40af;
-      padding: 10px;
+      padding: 12px;
     }
     nav a {
       color: white;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 17px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #93c5fd;
+      text-decoration: underline;
     }
     .hero {
-      padding: 40px;
+      padding: 60px 20px;
       text-align: center;
       background-image: url('https://i.imgur.com/j9wX6Oz.jpg');
       background-size: cover;
       background-position: center;
       color: white;
+      font-weight: 700;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
     }
     .hero h1 {
-      font-size: 36px;
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 22px;
+      margin-top: 0;
     }
     .section {
-      padding: 30px;
+      padding: 40px 20px;
       max-width: 800px;
       margin: auto;
     }
     .card {
       background: white;
-      padding: 20px;
-      margin-bottom: 20px;
+      padding: 25px 30px;
+      margin-bottom: 25px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       border-radius: 12px;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      transform: translateY(-6px);
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #1e40af;
+    }
+    ul {
+      padding-inline-start: 20px;
+      font-size: 18px;
+      line-height: 1.6;
     }
     footer {
       background: #1e293b;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 18px 10px;
+      font-size: 15px;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -99,118 +140,8 @@
       <h2>اتصل بنا</h2>
       <p>📞 782326580</p>
       <p>📍 عدن - خور مكسر</p>
-      <p>💬 واتساب: <a href="https://wa.me/967782326580">اضغط هنا</a></p>
-      <p>🌐 فيسبوك: <a href="https://facebook.com/jnah.travel">jnah.travel</a></p>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 جناح ترافل - جميع الحقوق محفوظة
-  </footer>
-</body>
-</html><!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>جناح ترافل | للحجوزات والسفر</title>
-  <style>
-    body {
-      font-family: 'Cairo', sans-serif;
-      background: #f3f4f6;
-      margin: 0;
-      padding: 0;
-      color: #1f2937;
-    }
-    header {
-      background-color: #2563eb;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 28px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      background-color: #1e40af;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
-    }
-    .hero {
-      padding: 40px;
-      text-align: center;
-      background-image: url('https://i.imgur.com/j9wX6Oz.jpg');
-      background-size: cover;
-      background-position: center;
-      color: white;
-    }
-    .hero h1 {
-      font-size: 36px;
-    }
-    .section {
-      padding: 30px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      border-radius: 12px;
-    }
-    footer {
-      background: #1e293b;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-  </style>
-</head>
-<body>
-  <header>جناح ترافل | للحجوزات والسياحة</header>
-  <nav>
-    <a href="#about">من نحن</a>
-    <a href="#services">الخدمات</a>
-    <a href="#contact">اتصل بنا</a>
-  </nav>
-
-  <section class="hero">
-    <h1>سفرك علينا!</h1>
-    <p>عروض مميزة وخدمة راقية من جناح ترافل</p>
-  </section>
-
-  <section id="about" class="section">
-    <div class="card">
-      <h2>من نحن</h2>
-      <p>نحن مكتب جناح ترافل للشحن والسياحة، نوفر لك كل خدمات السفر والحجوزات من تذاكر، تأشيرات، حج وعمرة، وشحن جوي سريع.</p>
-    </div>
-  </section>
-
-  <section id="services" class="section">
-    <div class="card">
-      <h2>خدماتنا</h2>
-      <ul>
-        <li>حجوزات طيران دولية ومحلية</li>
-        <li>استخراج تأشيرات عمرة وسياحة</li>
-        <li>خدمة الضمان للراغبين بالسفر</li>
-        <li>شحن جوي سريع من وإلى اليمن</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="card">
-      <h2>اتصل بنا</h2>
-      <p>📞 782326580</p>
-      <p>📍 عدن - خور مكسر</p>
-      <p>💬 واتساب: <a href="https://wa.me/967782326580">اضغط هنا</a></p>
-      <p>🌐 فيسبوك: <a href="https://facebook.com/jnah.travel">jnah.travel</a></p>
+      <p>💬 واتساب: <a href="https://wa.me/967782326580" target="_blank" rel="noopener">اضغط هنا</a></p>
+      <p>🌐 فيسبوك: <a href="https://facebook.com/jnah.travel" target="_blank" rel="noopener">jnah.travel</a></p>
     </div>
   </section>
 
